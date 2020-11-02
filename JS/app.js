@@ -66,3 +66,10 @@ if (animItems.length > 0) {
 
 
 
+
+const menuIcon = document.querySelector('.hamburger__menu');
+const navBar = document.querySelector('.section__menu');
+
+menuIcon.addEventListener('click', () => {
+	navBar.classList.toggle("change");
+})
