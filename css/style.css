@@ -33,11 +33,19 @@ body{
 header{
 	background: url(../img/BG__HEADER.png) center no-repeat ;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	z-index: 100;
 }
 .bg__header {
-	background: url(../img/Слой_2.png) center no-repeat ;
-	background-size: cover;
-
+	background-color: #000;
+	  height: 150%;
+	  left: 0;
+	  opacity: 0.50;
+	  position:absolute;
+	  top: 0;
+	  width: 100%;
+	  z-index: -100;
 }
 header .container {
 	max-width: 1105px;
@@ -47,6 +55,7 @@ header .container {
 .heaeder__wrapper {
 	color: #ffffff;
 	padding: 150px 0 100px 0;
+	z-index: 1;
 }
 .header__tittle {
 	font-size: 48px;
@@ -266,6 +275,8 @@ header .container {
 	padding: 20px;
 	color: #000000;
 	transition: all .3s;
+	box-sizing: border-box;
+	border-left: 3px solid #f6ae48;
 }
 .studio__colum__img {
 	padding: 0 0 12px;
@@ -322,10 +333,18 @@ header .container {
 .credo {
 	background: url(../img/bg__credo.png) center no-repeat ;
 	background-size: cover;
+	z-index: 100;
+	overflow: hidden;
+	position: relative;
 }
 .credo__bg {
-	background: url(../img/Слой_4.png) center no-repeat ;
-	background-size: cover;
+	background-color: #000;
+	position: absolute;
+	  height: 100%;
+	  left: 0;
+	  opacity: 0.50;
+	  width: 100%;
+	  z-index: -100;
 }
 .credo__wrapper {
 	display: flex;
@@ -760,7 +779,7 @@ header .container {
 	position: relative;
 }
 .PROJECTS__head {
-	background-color: #303263;
+	background-color: #000;
 }
 .PROJECTS__bg__tittle {
 	position: absolute;
@@ -787,13 +806,15 @@ header .container {
 }
 
 .PROJECTS__footer {
-	background-color: #303263;
+	background-color: #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0 0 40px 0;
 }
 .PROJECTS__button {
 	margin: 25px 0;
+	display: none;
 }
 .PROJECTS__button a{
 	border: 1px solid #fff;
@@ -819,7 +840,7 @@ header .container {
 .PROJECTS__body {
 	display: flex;
 	flex-direction: column;
-	background-color: #303263;
+	background-color: #000;
 }
 .PROJECTS__body__top {
 	display: flex;
@@ -987,10 +1008,18 @@ header .container {
 .TRADE {
 	background: url(../img/close.png) center no-repeat ;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	z-index: 100;
 }
 .TRADE__bg{
-	background: url(../img/Прямоугольник_11.png) center no-repeat ;
-	background-size: cover;
+	background-color: #000;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	opacity: 0.70;
+	width: 100%;
+	z-index: -100;
 }
 .container {
 	max-width: 1390px;
@@ -1125,10 +1154,18 @@ header .container {
 footer{
 	background: url(../img/footer/img__bg__fon.png) center no-repeat ;
 	background-size: cover;
+	z-index: 100;
+	position: relative;
+	overflow: hidden;
 }
 .footer__bg{
-	background: url(../img/footer/bg__fon.png) center no-repeat ;
-	background-size: cover;
+	background-color: #000;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	opacity: 0.70;
+	width: 100%;
+	z-index: -100;
 }
 footer .container {
 	max-width: 1200px;
